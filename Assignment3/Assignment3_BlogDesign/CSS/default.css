@@ -12,6 +12,7 @@
 
 }
 body{
+    color:#160505;
     font: 15px/24px;
     font-family: notosans-regular, sans-serif;
 }
@@ -129,6 +130,9 @@ nav ul {
      color:pink;
  }
 
+ footer{
+     padding-left: 1000px;
+ }
 
 
 
