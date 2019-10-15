@@ -1,0 +1,134 @@
+
+.content-outer{
+    border: 20px solid #bdc3c7;
+    padding: 20px;
+    margin: 20 auto 20 auto;
+    
+}
+
+.post-content{
+    color:black;
+
+
+}
+body{
+    font: 15px/24px;
+    font-family: notosans-regular, sans-serif;
+}
+
+.post{
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a  {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  nav li a:hover {
+    background-color: pink;
+  }
+
+  /*highlight the first Home*/
+  nav .active {
+    background-color: #4ABDAC;
+  }
+
+/*Make the page title pretty*/
+#page-title{
+    background: #383232 url(../images/header-bg.jpg);
+    padding-top: 42px;
+    padding-bottom: 54px;
+}
+#page-title h1{
+    font: 50px;
+    text-align: center;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, .3);
+    color:white;
+}
+#page-title p{
+    font: 50px;
+    text-align: center;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, .3);
+    color:rgb(246, 245, 246);
+
+}
+
+
+/*post*/
+.post {
+    padding-top: 24px;
+    padding-bottom: 18px;
+ }
+ .post .entry-header {
+    position: relative;
+    width: 100%;
+ }
+ .post .entry-header h1 {
+    font: 39px/48px;
+    margin-bottom: 18px;
+ }
+.post .entry-header h1 a,
+.post .entry-header h1 a:visited { color: #313131; }
+.post .entry-header h1 a:hover,
+.post .entry-header h1 a:focus { color: #11ABB0; }
+
+.post .post-meta {
+    font: 15px/24px notosans-regular, sans-serif;
+ }
+ .post .post-meta a,
+ .post .post-meta a:visited { color: #AFB4BB; }
+ .post .post-meta a:hover,
+ .post .post-meta a:focus { color: #11ABB0; }
+ 
+ .post .post-meta .date {
+    display: inline-block;
+    font: 15px/24px notosans-bold, sans-serif;
+    color: #313131;
+ }
+ .post .post-meta .categories {
+    display: inline-block;
+ }
+ .post .post-meta .categories a { display: inline-block; }
+
+ /* post image */
+.post .post-thumb {
+    color:pink;
+    margin: 6px 0 18px 0;
+    width: 30%;
+ }
+ 
+ /* post content */
+.post .post-content {
+    margin-bottom: 18px;
+ }
+
+ .content-outer{
+     margin: 0 10% 0 10%;
+ }
+ #page-title h1 span{
+     color:pink;
+ }
+
+
+
+
