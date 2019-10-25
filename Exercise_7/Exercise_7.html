@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Exercise 7: Mad Libs Part 2</title>
+<style>
+        body{
+			margin:40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+            background-color:#acebeb;
+			
+        }
+        #title{
+            color:rgb(217, 223, 230);
+            background-color:rgb(114, 153, 192);
+			
+        }
+		#btn{
+			height: 60px;
+			font-size:25px;
+			background-color:pink;
+			border-radius: 20px;
+			border:rgb(250, 170, 183) solid;
+			padding-left:20px;
+			padding-right:20px;
+			margin-left:100px;
+			
+		}
+		#output{
+			background-color:ivory;
+		}
+    </style>
+</head>
+
+<body>
+	<h1 id="title">Exercise 7: Mad Libs Part 2</h1>
+    
+	<p>Enter a friend's name: <input type="text" id="name1"><br><br>
+		Enter a verb in past tense: <input type="text" id="verb3"><br><br>
+		Enter a place name: <input type="text" id="place4"><br><br>
+		Enter an adjective: <input type="text" id="adj5"><br><br>
+		Enter a adjective for weather: <input type="text" id="adj6"><br><br>
+		Enter a verb: <input type="text" id="verb7"><br><br>
+	</p>
+	<p><button id="btn">Click this!</button></p>
+	<hr>
+    <!-- alternative to using <button> element:
+    	<input type="button" value = "Click this!">
+    -->
+    <p id="output"></p>
+	
+	<script>
+	
+	var name1 = document.getElementById("name1");
+	var verb3 = document.getElementById("verb3");
+	var verb3 = document.getElementById("place4");
+	var verb3 = document.getElementById("adj5");
+	var verb3 = document.getElementById("adj6");
+	var verb3 = document.getElementById("verb7");
+
+	var btn = document.getElementById("btn");
+	var output = document.getElementById("output");
+	
+	// function declaration:
+	
+	function displayHandler() { 
+		output.innerHTML = "Your input, sir: " + name1.value + " and I "  + verb3.value +" to a " + place4.value + " yesterday." + " We were " + adj5.value + ", but it was too " + adj6.value + " so we had to " +verb7.value + " to home as soon as possible.";
+	}
+	
+	/* alternative to a named function declaration is a function expression:
+		var displayHandler = function() {
+			output.innerHTML = "Your input, sir: " + input.value;
+		};
+	*/
+	
+	btn.onclick = displayHandler;
+	
+	</script>
+</body>
+</html>
