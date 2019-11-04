@@ -66,6 +66,7 @@
     <!--Part 2 questions starts-->
     <section id="part2">
         <div>
+            <h2>Part 2: Questions B (2.5 points)</h2>
             <h4>1. Describe two important differences between Java and Javascript.</h4>
             <p>
                 a. <span>Difference in the way of execution</span>Java is an Object Oriented Language, which needs to be compiled. But JavaScript is a Script Language, which just need a web page and a browser. <br>
@@ -107,46 +108,40 @@
             </p>
         </div>
 
-
-
     </section>
     <!--Part 2 questions ends-->
     
     <!--Part 3 questions starts-->
     <section id="part3">
+        <h2>Part 3: Exercise (5 points)</h2>
+        <p>
+            <h4> a) Create a program that prompts a user for their first name.</h4>
+            var userName = prompt("What is your first name?");
+            <h4>b) After the user has entered their name then have the program convert the user’s name to all upper case (this will require some research on your own).</h4>
+            var upperUserName = userName.toUpperCase();
+            <h4>c) Create an alert, or document.write(), that greets the user by using a loop to print their name 3 times in upper case, with 'Welcome' in front of their first or last name.  </h4>
+            for(var i = 0; i < 3; i++){
+                alert("Welcome " + upperUserName + "!");
 
+            };
+            
+        </p>
 
     </section>
 
 
     <!--Part 3 questions ends-->
 
+    <script>
+        var userName = prompt("What is your first name?");
+        var upperUserName = userName.toUpperCase();
+        for(var i = 0; i < 3; i++){
+                alert("Welcome " + upperUserName + "!");
+
+            };        
+
+    
+    </script>
+
 </body>
 </html>
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-<!--Part 3: Exercise (5 points)
-a) Create a program that prompts a user for their first name. 
-b) After the user has entered their name then have the program convert the user’s name to all upper case (this will require some research on your own).
-c) Create an alert, or document.write(), that greets the user by using a loop to print their name 3 times in upper case, with 'Welcome' in front of their first or last name.  
-
-For example if I used the program it would alert: 
-
-“Welcome AUSTIN!"
-
-“Welcome AUSTIN!"
-
-“Welcome AUSTIN!"-->
-
