@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Real Dice Roll</title>
+<style>
+    div{
+        border-bottom: darkblue solid 2px ;
+    }
+    body{
+        margin:20px;
+    }
+    
+        
+    
+</style>
+</head>
+
+<body>
+    
+    
+<img src="images/d1.gif" id="mydice">  <!--Left dice-->
+<img src="images/d1.gif" id="mydice2"> <!--right dice-->
+
+
+<!-- Update this so the event is in the Javascript code using an add event handler -->
+<br>
+<input type="button" value="Throw dice!" onclick="throwdice()">
+
+<br>
+<div id="note">
+
+</div>
+
+
+
+<script>
+
+
+
+//create the array
+var diceFace=["images/d1.gif", "images/d2.gif", "images/d3.gif", "images/d4.gif", "images/d5.gif", "images/d6.gif"]; 
+var diceFace2=["images/d1.gif", "images/d2.gif", "images/d3.gif", "images/d4.gif", "images/d5.gif", "images/d6.gif"];
+
+//reference the image
+var imageName=document.querySelector("#mydice");
+var imageName2=document.querySelector("#mydice2");
+
+
+function throwdice(){
+    document.getElementById("note").innerHTML = "Try your luck!";
+    document.body.style.backgroundColor = "white";
+    //create a random integer between 0 and 5
+    var randomdice = Math.floor(Math.random()*6);
+    var randomdice2 = Math.floor(Math.random()*6);
+    //There are a few ways to reference the images. Use the one you think works best
+    imageName.src=diceFace[randomdice];
+    imageName2.src=diceFace2[randomdice2];
+    console.log(randomdice+1);
+    console.log(randomdice2+1);
+    if(randomdice+randomdice2 +2 == 7 || randomdice+randomdice2 +2 == 11 ){
+        document.getElementById("note").innerHTML = "YA! You Win! Wanna try again?";
+        document.body.style.backgroundColor = "pink";
+    }else if (randomdice+randomdice2 +2 == 2 ){
+        document.getElementById("note").innerHTML = "Oh no, ou lose! Wanna try again?";
+        document.body.style.backgroundColor = "skyblue";
+    }
+
+}
+
+
+</script>
+</body>
+    
+</html>
