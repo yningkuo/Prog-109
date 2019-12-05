@@ -1,0 +1,194 @@
+      
+        
+        
+        
+
+       
+         /*-------for the player ---------*/
+		#container{
+			background: url('images/blood_trans.png') -50px -380px;
+            
+            float:left;
+			height: 50px;
+			width: 600px;
+        }
+               
+        #firstAttack4 {
+            float:left;
+			background: url('images/blood_trans.png') -50px -580px;
+            margin-right: 110px;
+            
+			height: 50px;
+			width: 600px;
+        }
+        #secondAttack4 {
+            float:left;
+			background: url('images/blood_trans.png') -50px -787px;
+            margin-left: 50px;
+            
+			height: 50px;
+			width: 600px;
+        }
+        #lastAttack4 {
+            float:left;
+			background: url('images/blood_trans.png') -50px -680px;
+            margin-left: 110px;
+            
+			height: 50px;
+			width: 600px;
+		}
+        /*-----player blood chart ends----------*/
+        
+     /*-----for the computer part to change blood chart. 
+            Here is how to change the blood chart - change the ID when the result come out!*/
+        #container2 {
+            
+			background: url('images/blood_trans.png') -50px -380px;
+            
+            float:right;
+                  
+			height: 50px;
+            width: 600px;
+            
+		}     
+        #firstAttack3 {
+            
+			background: url('images/blood_trans.png') -50px -580px;
+            
+            float:right;
+			height: 50px;
+            width: 600px;
+            
+        }
+        #secondAttack3 {
+           
+			background: url('images/blood_trans.png') -50px -787px;           
+            float:right;          
+			height: 50px;
+			width: 600px;
+        }
+        #lastAttack3 {
+            float:right;
+			background: url('images/blood_trans.png') -50px -680px;
+            
+    		height: 50px;
+			width: 600px;
+        }
+        /*-----computer blood chart ends---------*/
+        /*----------------------------------------*/
+        #player{
+            margin-left: 300px;
+            height:300px;
+            width:300px;
+            
+        }
+        #computer{
+            margin-left: 200px;
+            height:300px;
+            width:300px;
+        }
+       
+
+        #playerLarge{
+            
+            margin:30%;
+            height:200px;
+            width:200px;
+        }
+        #computerLarge{
+            
+            margin:30%;
+            height:200px;
+            width:200px;
+            background-color: la;
+        }
+
+        /*------Start page------------*/
+
+        #startPage{
+            display:block;
+            background-color: pink;
+            padding: 10px;
+        }
+        body{
+            margin:30px;
+            background-color: #F7F5E6;
+            
+        }
+        p{
+            margin:10px;
+            font-size:medium;
+        }
+
+        #startPageImg{
+            display:block;
+            margin-top:130px;
+        }
+        /*------ start page end---------*/
+        /*-----------game page-----------*/
+        #gamePage{
+			background-color:transparent;
+			display: none;
+		}
+        
+        .common{		
+			width:700px;
+            height:700px;
+            text-align: center;
+            margin-left:300px;
+            position: absolute;
+        }
+        .btn{
+            width:120px;
+            height:70px;
+            margin:30px;         
+        }
+        #note{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:x-large;
+            display: block;
+            margin-top:30px;
+        }
+
+        #backToStartPageButton{
+            margin-left: 42%;
+            display:inline-flex;
+            text-align: center;
+            
+        }
+        #backToStartPageButton button{          
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 10px;
+            padding-left: 10px;
+            display:flex;
+            text-align: center;
+            color:white;
+            line-height:30px;
+            height:60px;
+            width:80px;
+            background-color: #465C8B;
+            border-radius: 12px;
+        }
+        #startGamePageButton{  
+            margin-left: 42%;
+            padding-left: 10px;
+            display:inline-flex;
+            text-align: center;        
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 10px;
+            display:flex;
+            text-align: center;
+            color:white;
+            line-height:30px;
+            height:60px;
+            width:80px;
+            background-color: rgb(173, 167, 158);
+            border-radius: 12px;
+        }
+
+        /*------ game page end---------*/
+    
+ 
